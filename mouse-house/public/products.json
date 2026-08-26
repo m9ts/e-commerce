@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "name": "Razer Viper V4 Pro",
+    "description": "Mouse sem fio de alta performance",
+    "price": 799.90,
+    "image": "/images/v4_pro.png",
+    "specifications": {
+      "dimensions": "128 mm (C) x 68 mm (L) x 44 mm (A)",
+      "shape": "Ergonômico - Destro",
+      "grip": "Palm - Claw - Fingertip",
+      "weight": "57 g",
+      "buttons": "6 (incluindo click central)",
+      "switches": "Razer Optical v4",
+      "sensor": "FOCUS PRO 45K",
+      "sensorType": "Óptico",
+      "dpi": "Até 45.000 DPI",
+      "ips": "900",
+      "acceleration": "85g",
+      "pollingRate": "Até 8.000 Hz",
+      "battery": "Até 150 horas (1.000 Hz)"
+    }
+  },
+  {
+    "id": 2,
+    "name": "WLMouse Ying X",
+    "description": "Mouse gamer sem fio de alta performance",
+    "price": 699.00,
+    "image": "/images/ying_x.png",
+    "specifications": {
+      "dimensions": "119 mm (C) x 60 mm (L) x 37 mm (A)",
+      "shape": "Simétrico - Destro",
+      "grip": "Claw - Palm - Fingertip",
+      "weight": "47 g ±2 g",
+      "buttons": "5 (incluindo click central)",
+      "switches": "Omron Optical",
+      "sensor": "PAW3950HS",
+      "sensorType": "Óptico",
+      "dpi": "Até 30.000 DPI",
+      "ips": "750",
+      "acceleration": "50G",
+      "pollingRate": "Até 8.000 Hz",
+      "battery": "Até 60 horas (1K) ou 8 horas (8K)"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Pulsar ZywOo Gen. 2",
+    "description": "Mouse gamer desenvolvido para alto desempenho competitivo",
+    "price": 899.00,
+    "image": "/images/zywoo_gen2.png",
+    "specifications": {
+      "dimensions": "119.4 mm (C) x 67.5 mm (L) x 43.5 mm (A)",
+      "shape": "Ergonômico - Destro",
+      "grip": "Palm",
+      "weight": "62 g ±1 g",
+      "buttons": "5 (incluindo scroll)",
+      "switches": "Pulsar Optical Switches",
+      "sensor": "XS-1 Flagship",
+      "dpi": "Até 32.000 DPI",
+      "ips": "750",
+      "acceleration": "50g",
+      "pollingRate": "Até 8.000 Hz",
+      "battery": "Até 70 horas (1.000 Hz)"
+    }
+  },
+  {
+    "id": 4,
+    "name": "MCHOSE A7X Ultra",
+    "description": "Mouse sem fio voltado para precisão e desempenho",
+    "price": 749.00,
+    "image": "/images/a7x_ultra.png",
+    "specifications": {
+      "dimensions": "125.7 mm (C) x 63.2 mm (L) x 39.8 mm (A)",
+      "shape": "Simétrico - Destro",
+      "grip": "Claw - Fingertip - Palm",
+      "weight": "53 g ±2 g",
+      "buttons": "7 programáveis",
+      "switches": "Omron Optical",
+      "sensor": "PAW3950 TI",
+      "sensorType": "Óptico",
+      "dpi": "Até 42.000 DPI",
+      "ips": "750 IPS",
+      "acceleration": "50G",
+      "pollingRate": "Até 8.000 Hz (Wired + Wireless)",
+      "battery": "Até 120 horas (1.000 Hz)"
+    }
+  },
+  {
+    "id": 5,
+    "name": "ATK Zero Extreme",
+    "description": "Mouse gamer leve e focado em alta performance",
+    "price": 649.90,
+    "image": "/images/atk_zero_extreme.png",
+    "specifications": {
+      "dimensions": "120.1 mm (C) x 63.2 mm (L) x 38.1 mm (A)",
+      "shape": "Simétrico - Destro",
+      "grip": "Claw - Palm - Fingertip",
+      "weight": "44 g ±3 g",
+      "buttons": "5 (incluindo click central)",
+      "switches": "ATK Custom Optical Switches",
+      "sensor": "PAW3950 Ultra",
+      "sensorType": "Óptico",
+      "dpi": "Até 30.000 DPI",
+      "ips": "750",
+      "acceleration": "50G",
+      "pollingRate": "125 Hz até 8.000 Hz",
+      "battery": "Até 130 horas (1K)"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Pulsar X2 CrazyLight",
+    "description": "Mouse ultraleve desenvolvido para movimentos rápidos e precisos",
+    "price": 829.00,
+    "image": "/images/x2_crazylight.png",
+    "specifications": {
+      "dimensions": "115.6 mm (C) x 61 mm (L) x 36.6 mm (A)",
+      "shape": "Simétrico - Destro",
+      "grip": "Claw - Fingertip",
+      "weight": "35 g",
+      "buttons": "5 (incluindo click central)",
+      "switches": "Pulsar Optical",
+      "sensor": "Pulsar XS-1 (3950)",
+      "sensorType": "Óptico",
+      "dpi": "32.000 DPI",
+      "ips": "750",
+      "acceleration": "50g",
+      "pollingRate": "Até 8.000 Hz",
+      "battery": "Até 65 horas em 2.4 GHz (1.000 Hz)"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Lamzu Maya X 8K",
+    "description": "Mouse sem fio de alto desempenho com polling rate de até 8K",
+    "price": 999.00,
+    "image": "/images/maya_x.png",
+    "specifications": {
+      "dimensions": "124 mm (C) x 64 mm (L) x 40 mm (A)",
+      "shape": "Simétrico - Destro",
+      "grip": "Fingertip - Palm - Claw",
+      "weight": "47 g",
+      "buttons": "6 (incluindo click central)",
+      "switches": "OMRON Opticals",
+      "sensor": "PixArt PAW3950",
+      "sensorType": "Óptico",
+      "dpi": "100–30.000 DPI",
+      "ips": "750",
+      "acceleration": "50g",
+      "pollingRate": "Até 8.000 Hz",
+      "battery": "Até 70 horas em 2.4 GHz (1.000 Hz)"
+    }
+  }
+]
