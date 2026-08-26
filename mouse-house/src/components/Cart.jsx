@@ -4,6 +4,7 @@ function Cart({
   onIncrease,
   onDecrease,
   onRemove,
+  onCheckout,
 }) {
   const total = cart.reduce(
     (sum, item) => sum + item.price * item.quantity,
@@ -81,8 +82,8 @@ function Cart({
               </strong>
             </div>
 
-            <button className="checkout-button">
-              Ir para checkout
+            <button className="checkout-button" onClick={onCheckout}>
+              Finalizar compra
             </button>
           </>
         )}

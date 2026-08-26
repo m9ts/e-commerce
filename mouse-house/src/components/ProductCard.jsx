@@ -1,4 +1,18 @@
+import { useState } from 'react';
+
 function ProductCard({ product, onViewDetails, onAddToCart }) {
+  const [added, setAdded] = useState(false);
+
+  const handleAddedToCart = () => {
+    onAddToCart(product);
+
+    setAdded(true);
+
+    setTimeout(() => {
+      setAdded(false);
+    }, 1500);
+  };
+
   return (
     <article className="product-card">
       <div className="product-image-container">
@@ -19,12 +33,18 @@ function ProductCard({ product, onViewDetails, onAddToCart }) {
           })}
         </strong>
 
-        <button className="details-button" onClick={() => onViewDetails(product)}>
+        <button
+          className="details-button"
+          onClick={() => onViewDetails(product)}
+        >
           Ver detalhes
         </button>
 
-        <button className="cart-button" onClick={() => onAddToCart(product)}>
-          Adicionar ao carrinho
+        <button
+          className={`cart-button ${added ? 'added' : ''}`}
+          onClick={handleAddedToCart}
+        >
+          {added ? 'Adicionado' : 'Adicionar ao carrinho'}
         </button>
       </div>
     </article>

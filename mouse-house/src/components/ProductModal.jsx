@@ -1,19 +1,30 @@
 function ProductModal({ product, onClose }) {
-    const dictionary = {
-        dimensions: 'Dimensões',
-        shape: 'Formato',
-        grip: 'Pegada',
-        weight: 'Peso',
-        buttons: 'Botões',
-        switches: 'Switches principais',
-        sensor: 'Sensor',
-        sensorType: 'Tipo de sensor',
-        dpi: 'DPI',
-        ips: 'IPS',
-        acceleration: 'Aceleração',
-        pollingRate: 'Frequência',
-        battery: 'Bateria',
-    };
+  const dictionary = {
+    // mouse
+    dimensions: 'Dimensões',
+    shape: 'Formato',
+    grip: 'Pegada',
+    weight: 'Peso',
+    buttons: 'Botões',
+    switches: 'Switches principais',
+    sensor: 'Sensor',
+    sensorType: 'Tipo de sensor',
+    dpi: 'DPI',
+    ips: 'IPS',
+    acceleration: 'Aceleração',
+    pollingRate: 'Frequência',
+    battery: 'Bateria',
+
+    // teclado
+    type: 'Tipo',
+    layout: 'Layout',
+    material: 'Material',
+    lighting: 'Iluminação',
+    keycaps: 'Keycaps',
+    connection: 'Tipo de conexão',
+    antiGhosting: 'Anti-ghosting',
+    cable: 'Cabo',
+  };
 
   return (
     <div className="modal-overlay">
@@ -45,7 +56,7 @@ function ProductModal({ product, onClose }) {
           <ul>
             {Object.entries(product.specifications).map(([key, value]) => (
               <li key={key}>
-                <strong>{dictionary[key]}:</strong> {value}
+                <strong>{dictionary[key] || key}:</strong> {value}
               </li>
             ))}
           </ul>

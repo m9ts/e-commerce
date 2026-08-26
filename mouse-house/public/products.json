@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Razer Viper V4 Pro",
+    "category": "Mouse",
     "description": "Mouse sem fio de alta performance",
     "price": 799.90,
     "image": "/images/v4_pro.png",
@@ -24,6 +25,7 @@
   {
     "id": 2,
     "name": "WLMouse Ying X",
+    "category": "Mouse",
     "description": "Mouse gamer sem fio de alta performance",
     "price": 699.00,
     "image": "/images/ying_x.png",
@@ -46,6 +48,7 @@
   {
     "id": 3,
     "name": "Pulsar ZywOo Gen. 2",
+    "category": "Mouse",
     "description": "Mouse gamer desenvolvido para alto desempenho competitivo",
     "price": 899.00,
     "image": "/images/zywoo_gen2.png",
@@ -67,6 +70,7 @@
   {
     "id": 4,
     "name": "MCHOSE A7X Ultra",
+    "category": "Mouse",
     "description": "Mouse sem fio voltado para precisão e desempenho",
     "price": 749.00,
     "image": "/images/a7x_ultra.png",
@@ -89,6 +93,7 @@
   {
     "id": 5,
     "name": "ATK Zero Extreme",
+    "category": "Mouse",
     "description": "Mouse gamer leve e focado em alta performance",
     "price": 649.90,
     "image": "/images/atk_zero_extreme.png",
@@ -111,6 +116,7 @@
   {
     "id": 6,
     "name": "Pulsar X2 CrazyLight",
+    "category": "Mouse",
     "description": "Mouse ultraleve desenvolvido para movimentos rápidos e precisos",
     "price": 829.00,
     "image": "/images/x2_crazylight.png",
@@ -133,6 +139,7 @@
   {
     "id": 7,
     "name": "Lamzu Maya X 8K",
+    "category": "Mouse",
     "description": "Mouse sem fio de alto desempenho com polling rate de até 8K",
     "price": 999.00,
     "image": "/images/maya_x.png",
@@ -150,6 +157,63 @@
       "acceleration": "50g",
       "pollingRate": "Até 8.000 Hz",
       "battery": "Até 70 horas em 2.4 GHz (1.000 Hz)"
+    }
+  },
+  {
+    "id": 8,
+    "name": "ATK EDGE 60 HE Ultimate",
+    "category": "Teclado",
+    "description": "Teclado magnético compacto desenvolvido para alta performance",
+    "price": 1299.90,
+    "image": "/images/atk_edge_60_he.png",
+    "specifications": {
+      "type": "Magnético (Hall Effect)",
+      "layout": "60% com 61 teclas - ANSI",
+      "dimensions": "306 mm (L) x 108 mm (P) x 25 mm (A)",
+      "material": "Alumínio CNC anodizado",
+      "lighting": "RGB por tecla, LEDs South-Facing",
+      "keycaps": "PBT com Dye-Sublimation - Perfil Cherry",
+      "connection": "USB-C com fio",
+      "antiGhosting": "100% anti-ghosting / NKRO",
+      "cable": "Removível - USB-A para USB-C"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Wooting Two HE",
+    "category": "Teclado",
+    "description": "Teclado magnético full size desenvolvido para precisão e desempenho",
+    "price": 1150,
+    "image": "/images/wooting_two_he.png",
+    "specifications": {
+      "type": "Magnético (Hall Effect)",
+      "layout": "Full Size com teclado numérico - ANSI",
+      "dimensions": "460 mm (L) x 150 mm (P) x 39 mm (A)",
+      "material": "Plástico ABS",
+      "lighting": "RGB por tecla e 5 níveis de brilho",
+      "keycaps": "PBT Double-Shot",
+      "connection": "USB-C",
+      "antiGhosting": "100% anti-ghosting / NKRO",
+      "cable": "Removível - Trançado"
+    }
+  },
+  {
+    "id": 10,
+    "name": "GravaStar Mercury V60",
+    "category": "Teclado",
+    "description": "Teclado magnético compacto com construção em liga de alumínio",
+    "price": 1200,
+    "image": "/images/gravastar_mercury_v60.png",
+    "specifications": {
+      "type": "Magnético (Hall Effect)",
+      "layout": "60% com 61 teclas - ANSI",
+      "dimensions": "303,4 mm (L) x 114,5 mm (P) x 37,5 mm (A)",
+      "material": "Liga de alumínio",
+      "lighting": "RGB por tecla",
+      "keycaps": "PBT Double-Shot",
+      "connection": "USB-C com fio",
+      "antiGhosting": "100% anti-ghosting / NKRO",
+      "cable": "Removível - USB-C"
     }
   }
 ]
