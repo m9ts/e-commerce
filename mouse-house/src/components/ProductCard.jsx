@@ -1,4 +1,4 @@
-function ProductCard({ product }) {
+function ProductCard({ product, onViewDetails, onAddToCart }) {
   return (
     <article className="product-card">
       <div className="product-image-container">
@@ -19,8 +19,12 @@ function ProductCard({ product }) {
           })}
         </strong>
 
-        <button className="details-button">
+        <button className="details-button" onClick={() => onViewDetails(product)}>
           Ver detalhes
+        </button>
+
+        <button className="cart-button" onClick={() => onAddToCart(product)}>
+          Adicionar ao carrinho
         </button>
       </div>
     </article>
