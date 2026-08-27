@@ -171,7 +171,12 @@ function Home() {
                 }
               />
 
+              <label htmlFor="sort-order" className="sr-only">
+                Ordenar produtos
+              </label>
+
               <select
+                id="sort-order"
                 value={sortOrder}
                 onChange={(event) =>
                   setSortOrder(event.target.value)
