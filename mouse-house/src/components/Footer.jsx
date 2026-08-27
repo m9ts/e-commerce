@@ -4,7 +4,7 @@ function Footer() {
             <div className="container footer-conter">
                 <div>
                     <h3>Mouse House</h3>
-                    <p>Mouses de alta performance para quem busca precisão, leveza e tecnologia!</p>
+                    <p>Periféricos de alta performance para quem busca precisão, leveza e tecnologia!</p>
                 </div>
 
                 <div className="footer-links">
@@ -14,7 +14,7 @@ function Footer() {
             </div>
 
             <div className="container footer-bottom">
-                <p>© 2026 Mouse House</p>
+                <p>© 2026 Mouse House - Mateus Gois</p>
             </div>
         </footer>
     );
