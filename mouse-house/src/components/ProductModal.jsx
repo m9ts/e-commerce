@@ -37,6 +37,7 @@ function ProductModal({ product, onClose }) {
           src={product.image}
           alt={product.name}
           className="modal-image"
+          decoding="async"
         />
 
         <h2>{product.name}</h2>

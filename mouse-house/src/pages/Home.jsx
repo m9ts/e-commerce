@@ -15,6 +15,7 @@ function Home() {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('Todos');
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch('/products.json')
@@ -24,6 +25,9 @@ function Home() {
       })
       .catch((e) => {
         console.error('Erro ao carregar os produtos:', e);
+      })
+      .finally(() => {
+        setLoading(false);
       });
   }, []);
 
@@ -187,20 +191,43 @@ function Home() {
               </select>
             </div>
 
-            {filteredProducts.length === 0 && (
-              <p>Nenhum produto encontrado =/</p>
-            )}
+            {loading ? (
+              <div className="products-grid">
+                {Array.from({ length: 6 }).map((_, index) => (
+                  <div
+                    className="product-card product-skeleton"
+                    key={index}
+                  >
+                    <div className="product-image-container skeleton-block" />
 
-            <div className="products-grid">
-              {sortedProducts.map((product) => (
-                <ProductCard
-                  key={product.id}
-                  product={product}
-                  onViewDetails={setSelectedProduct}
-                  onAddToCart={addToCart}
-                />
-              ))}
-            </div>
+                    <div className="product-info">
+                      <div className="skeleton-line skeleton-title" />
+                      <div className="skeleton-line skeleton-price" />
+                      <div className="skeleton-button" />
+                      <div className="skeleton-button" />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <>
+                {filteredProducts.length === 0 && (
+                  <p>Nenhum produto encontrado =/</p>
+                )}
+
+                <div className="products-grid">
+                  {sortedProducts.map((product, index) => (
+                    <ProductCard
+                      key={product.id}
+                      product={product}
+                      priority={index === 0}
+                      onViewDetails={setSelectedProduct}
+                      onAddToCart={addToCart}
+                    />
+                  ))}
+                </div>
+              </>
+            )}
           </div>
         </section>
       </main>

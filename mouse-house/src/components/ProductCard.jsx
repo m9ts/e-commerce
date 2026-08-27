@@ -1,6 +1,11 @@
 import { useState } from 'react';
 
-function ProductCard({ product, onViewDetails, onAddToCart }) {
+function ProductCard({
+  product,
+  priority,
+  onViewDetails,
+  onAddToCart,
+}) {
   const [added, setAdded] = useState(false);
 
   const handleAddedToCart = () => {
@@ -20,6 +25,8 @@ function ProductCard({ product, onViewDetails, onAddToCart }) {
           src={product.image}
           alt={product.name}
           className="product-image"
+          decoding="async"
+          fetchPriority={priority ? 'high' : 'auto'}
         />
       </div>
 
