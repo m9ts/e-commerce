@@ -8,7 +8,7 @@ function ComoFiz() {
 
                 <div className='video-container'>
                     <video className='project-video' controls preload='metadata'>
-                        <source src='null' type='video/mp4' />
+                        <source src='https://pub-20a37aaaf276468b8725b960dd048748.r2.dev/video.mp4' type='video/mp4' />
 
                         Seu navegador não suporta reprodução de vídeo =/
 
