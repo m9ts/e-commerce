@@ -16,7 +16,6 @@
       "buttons": "6 (incluindo click central)",
       "switches": "Razer Optical v4",
       "sensor": "FOCUS PRO 45K",
-      "sensorType": "Óptico",
       "dpi": "Até 45.000 DPI",
       "ips": "900",
       "acceleration": "85g",
@@ -40,7 +39,6 @@
       "buttons": "5 (incluindo click central)",
       "switches": "Omron Optical",
       "sensor": "PAW3950HS",
-      "sensorType": "Óptico",
       "dpi": "Até 30.000 DPI",
       "ips": "750",
       "acceleration": "50G",
@@ -87,7 +85,6 @@
       "buttons": "7 programáveis",
       "switches": "Omron Optical",
       "sensor": "PAW3950 TI",
-      "sensorType": "Óptico",
       "dpi": "Até 42.000 DPI",
       "ips": "750 IPS",
       "acceleration": "50G",
@@ -112,7 +109,6 @@
       "buttons": "5 (incluindo click central)",
       "switches": "ATK Custom Optical Switches",
       "sensor": "PAW3950 Ultra",
-      "sensorType": "Óptico",
       "dpi": "Até 30.000 DPI",
       "ips": "750",
       "acceleration": "50G",
@@ -136,7 +132,6 @@
       "buttons": "5 (incluindo click central)",
       "switches": "Pulsar Optical",
       "sensor": "Pulsar XS-1 (3950)",
-      "sensorType": "Óptico",
       "dpi": "32.000 DPI",
       "ips": "750",
       "acceleration": "50g",
@@ -160,7 +155,6 @@
       "buttons": "6 (incluindo click central)",
       "switches": "OMRON Opticals",
       "sensor": "PixArt PAW3950",
-      "sensorType": "Óptico",
       "dpi": "100–30.000 DPI",
       "ips": "750",
       "acceleration": "50g",
@@ -177,15 +171,11 @@
     "promotion": false,
     "image": "/images/atk_edge_60_he.png",
     "specifications": {
-      "type": "Magnético (Hall Effect)",
       "layout": "60% com 61 teclas - ANSI",
-      "dimensions": "306 mm (L) x 108 mm (P) x 25 mm (A)",
+      "switchType": "Magnético - Hall Effect",
       "material": "Alumínio CNC anodizado",
-      "lighting": "RGB por tecla, LEDs South-Facing",
       "keycaps": "PBT com Dye-Sublimation - Perfil Cherry",
-      "connection": "USB-C com fio",
-      "antiGhosting": "100% anti-ghosting / NKRO",
-      "cable": "Removível - USB-A para USB-C"
+      "connection": "USB-C com fio"
     }
   },
   {
@@ -198,15 +188,11 @@
     "promotion": true,
     "image": "/images/wooting_two_he.png",
     "specifications": {
-      "type": "Magnético (Hall Effect)",
       "layout": "Full Size com teclado numérico - ANSI",
-      "dimensions": "460 mm (L) x 150 mm (P) x 39 mm (A)",
+      "switchType": "Magnético - Hall Effect",
       "material": "Plástico ABS",
-      "lighting": "RGB por tecla e 5 níveis de brilho",
       "keycaps": "PBT Double-Shot",
-      "connection": "USB-C",
-      "antiGhosting": "100% anti-ghosting / NKRO",
-      "cable": "Removível - Trançado"
+      "connection": "USB-C"
     }
   },
   {
@@ -218,15 +204,11 @@
     "promotion": false,
     "image": "/images/gravastar_mercury_v60.png",
     "specifications": {
-      "type": "Magnético (Hall Effect)",
       "layout": "60% com 61 teclas - ANSI",
-      "dimensions": "303,4 mm (L) x 114,5 mm (P) x 37,5 mm (A)",
+      "switchType": "Magnético - Hall Effect",
       "material": "Liga de alumínio",
-      "lighting": "RGB por tecla",
       "keycaps": "PBT Double-Shot",
-      "connection": "USB-C com fio",
-      "antiGhosting": "100% anti-ghosting / NKRO",
-      "cable": "Removível - USB-C"
+      "connection": "USB-C com fio"
     }
   },
   {
@@ -239,20 +221,11 @@
     "promotion": true,
     "image": "/images/polar_65_calabera.png",
     "specifications": {
-      "dimensions": "315 mm (L) x 109 mm (P) x 40 mm (A)",
       "layout": "65% - ANSI",
-      "keys": "68 teclas",
-      "weight": "Aprox. 1.020 g",
-      "switches": "Fuji Dual-Rail Magnetic - Linear 36 g",
       "switchType": "Magnético - Hall Effect",
-      "actuation": "Ajustável de 0,1 mm a 3,8 mm",
-      "rapidTrigger": "Sim",
-      "pollingRate": "1.000 Hz",
-      "connection": "USB com cabo removível de 1,8 m",
+      "material": "Alumínio CNC",
       "keycaps": "PBT Dye-Sub 1,5 mm - Perfil AOP",
-      "case": "Alumínio CNC",
-      "hotSwap": "Sim",
-      "rgb": "RGB com 16 modos"
+      "connection": "USB com cabo removível de 1,8 m"
     }
   },
   {
@@ -265,21 +238,10 @@
     "image": "/images/everglide_su75_pro.png",
     "specifications": {
       "layout": "75% - ANSI US",
-      "keys": "81 teclas",
-      "weight": "2.000 g ±50 g",
-      "switches": "Everglide Wukong Hall Effect",
       "switchType": "Magnético - Hall Effect",
-      "actuation": "Ajustável individualmente por tecla",
-      "rapidTrigger": "Sim - precisão configurável de até 0,001 mm",
-      "pollingRate": "8.000 Hz",
-      "scanRate": "256.000 Hz",
-      "latency": "0,1 ms",
-      "connection": "USB-C com fio",
+      "material": "Alumínio 6063 CNC anodizado",
       "keycaps": "PC translúcido - Perfil Cherry",
-      "case": "Alumínio 6063 CNC anodizado",
-      "plate": "Fibra de carbono",
-      "hotSwap": "Sim",
-      "rgb": "RGB duplo com 170 LEDs"
+      "connection": "USB-C com fio"
     }
   }
 ]

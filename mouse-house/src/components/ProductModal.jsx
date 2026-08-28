@@ -24,6 +24,7 @@ function ProductModal({ product, onClose }) {
     connection: 'Tipo de conexão',
     antiGhosting: 'Anti-ghosting',
     cable: 'Cabo',
+    switchType: 'Tipo de switch',
   };
 
   return (
@@ -57,7 +58,7 @@ function ProductModal({ product, onClose }) {
           <ul>
             {Object.entries(product.specifications).map(([key, value]) => (
               <li key={key}>
-                <strong>{dictionary[key] || key}:</strong> {value}
+                <strong>{dictionary[key] || key}</strong> {value}
               </li>
             ))}
           </ul>
