@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function Checkout({ cart, onClose, onFinish }) {
+function Checkout({ cart, onClose, onFinish, onBackToCart }) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -49,6 +49,7 @@ function Checkout({ cart, onClose, onFinish }) {
             </div>
 
             <button
+              type="button"
               className="checkout-close"
               onClick={onClose}
             >
@@ -120,6 +121,7 @@ function Checkout({ cart, onClose, onFinish }) {
             </div>
 
             <button
+              type="button"
               className="finish-order-button"
               onClick={onFinish}
             >
@@ -131,7 +133,7 @@ function Checkout({ cart, onClose, onFinish }) {
     );
   }
 
-  // Checkout
+  // finalização
   return (
     <div className="checkout-overlay">
       <div className="checkout-container">
@@ -141,14 +143,24 @@ function Checkout({ cart, onClose, onFinish }) {
             <h2>Finalizar pedido</h2>
           </div>
 
-          <button
-            className="checkout-close"
-            onClick={onClose}
-          >
-            ×
-          </button>
-        </div>
+          <div className="checkout-header-actions">
+            <button
+              type="button"
+              className="back-cart-button"
+              onClick={onBackToCart}
+            >
+              Voltar ao carrinho
+            </button>
 
+            <button
+              type="button"
+              className="checkout-close"
+              onClick={onClose}
+            >
+              ×
+            </button>
+          </div>
+        </div>
         <form
           className="checkout-content"
           onSubmit={handleSubmit}

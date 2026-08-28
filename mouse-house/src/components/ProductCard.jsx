@@ -4,15 +4,38 @@ import Stars from './Stars';
 function ProductCard({
   product,
   priority,
+  quantityInCart,
   onViewDetails,
   onAddToCart,
 }) {
   const [added, setAdded] = useState(false);
+  const [quantityToAdd, setQuantityToAdd] = useState(1);
+
+  const limiteAlcancado = quantityInCart >= 10;
+
+  const aumentarQuantidade = () => {
+    const quantidadeDisponivel = 10 - quantityInCart;
+
+    if (quantityToAdd < quantidadeDisponivel) {
+      setQuantityToAdd(quantityToAdd + 1);
+    }
+  };
+
+  const diminuirQuantidade = () => {
+    if (quantityToAdd > 1) {
+      setQuantityToAdd(quantityToAdd - 1);
+    }
+  };
 
   const handleAddedToCart = () => {
-    onAddToCart(product);
+    if (limiteAlcancado) {
+      return;
+    }
+
+    onAddToCart(product, quantityToAdd);
 
     setAdded(true);
+    setQuantityToAdd(1);
 
     setTimeout(() => {
       setAdded(false);
@@ -70,11 +93,40 @@ function ProductCard({
           Ver detalhes
         </button>
 
+        {!limiteAlcancado && (
+          <div className="card-quantity-control">
+            <button
+              type="button"
+              onClick={diminuirQuantidade}
+              disabled={quantityToAdd <= 1}
+            >
+              -
+            </button>
+
+            <span>{quantityToAdd}</span>
+
+            <button
+              type="button"
+              onClick={aumentarQuantidade}
+              disabled={
+                quantityToAdd >= 10 - quantityInCart
+              }
+            >
+              +
+            </button>
+          </div>
+        )}
+
         <button
           className={`cart-button ${added ? 'added' : ''}`}
           onClick={handleAddedToCart}
+          disabled={limiteAlcancado}
         >
-          {added ? 'Adicionado' : 'Adicionar ao carrinho'}
+          {limiteAlcancado
+            ? 'Limite de 10 unidades'
+            : added
+              ? 'Adicionado'
+              : 'Adicionar ao carrinho'}
         </button>
       </div>
     </article>

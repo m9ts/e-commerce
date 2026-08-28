@@ -57,20 +57,21 @@ function Home() {
     sortedProducts.sort((a, b) => b.price - a.price);
   }
 
-  const addToCart = (product) => {
+  const addToCart = (product, quantity = 1) => {
     const productInCart = cart.find(
       (item) => item.id === product.id
     );
 
     if (productInCart) {
-      if (productInCart.quantity >= 10) {
-        return;
-      }
+      const newQuantity = Math.min(
+        productInCart.quantity + quantity,
+        10
+      );
 
       setCart(
         cart.map((item) =>
           item.id === product.id
-            ? { ...item, quantity: item.quantity + 1 }
+            ? { ...item, quantity: newQuantity }
             : item
         )
       );
@@ -79,7 +80,7 @@ function Home() {
         ...cart,
         {
           ...product,
-          quantity: 1,
+          quantity: Math.min(quantity, 10),
         },
       ]);
     }
@@ -128,6 +129,11 @@ function Home() {
     setIsCheckoutOpen(false);
   };
 
+  const voltarAoCarrinho = () => {
+    setIsCheckoutOpen(false);
+    setIsCartOpen(true);
+  };
+
   return (
     <>
       <Header
@@ -169,7 +175,9 @@ function Home() {
               </button>
 
               <button
-                className={`promotion-filter ${onlyPromotions ? 'active' : ''}`}
+                className={`promotion-filter ${
+                  onlyPromotions ? 'active' : ''
+                }`}
                 onClick={() => setOnlyPromotions(!onlyPromotions)}
               >
                 Ofertas
@@ -186,7 +194,10 @@ function Home() {
                 }
               />
 
-              <label htmlFor="sort-order" className="sr-only">
+              <label
+                htmlFor="sort-order"
+                className="sr-only"
+              >
                 Ordenar produtos
               </label>
 
@@ -236,15 +247,23 @@ function Home() {
                 )}
 
                 <div className="products-grid">
-                  {sortedProducts.map((product, index) => (
-                    <ProductCard
-                      key={product.id}
-                      product={product}
-                      priority={index === 0}
-                      onViewDetails={setSelectedProduct}
-                      onAddToCart={addToCart}
-                    />
-                  ))}
+                  {sortedProducts.map((product, index) => {
+                    const quantityInCart =
+                      cart.find(
+                        (item) => item.id === product.id
+                      )?.quantity || 0;
+
+                    return (
+                      <ProductCard
+                        key={product.id}
+                        product={product}
+                        priority={index === 0}
+                        quantityInCart={quantityInCart}
+                        onViewDetails={setSelectedProduct}
+                        onAddToCart={addToCart}
+                      />
+                    );
+                  })}
                 </div>
               </>
             )}
@@ -276,6 +295,7 @@ function Home() {
         <Checkout
           cart={cart}
           onClose={() => setIsCheckoutOpen(false)}
+          onBackToCart={voltarAoCarrinho}
           onFinish={finalizarCompra}
         />
       )}
