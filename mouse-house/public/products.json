@@ -5,6 +5,8 @@
     "category": "Mouse",
     "description": "Mouse sem fio de alta performance",
     "price": 799.90,
+    "oldPrice": 899.90,
+    "promotion": true,
     "image": "/images/v4_pro.png",
     "specifications": {
       "dimensions": "128 mm (C) x 68 mm (L) x 44 mm (A)",
@@ -28,6 +30,7 @@
     "category": "Mouse",
     "description": "Mouse gamer sem fio de alta performance",
     "price": 699.00,
+    "promotion": false,
     "image": "/images/ying_x.png",
     "specifications": {
       "dimensions": "119 mm (C) x 60 mm (L) x 37 mm (A)",
@@ -51,6 +54,7 @@
     "category": "Mouse",
     "description": "Mouse gamer desenvolvido para alto desempenho competitivo",
     "price": 899.00,
+    "promotion": false,
     "image": "/images/zywoo_gen2.png",
     "specifications": {
       "dimensions": "119.4 mm (C) x 67.5 mm (L) x 43.5 mm (A)",
@@ -73,6 +77,7 @@
     "category": "Mouse",
     "description": "Mouse sem fio voltado para precisão e desempenho",
     "price": 749.00,
+    "promotion": false,
     "image": "/images/a7x_ultra.png",
     "specifications": {
       "dimensions": "125.7 mm (C) x 63.2 mm (L) x 39.8 mm (A)",
@@ -96,6 +101,8 @@
     "category": "Mouse",
     "description": "Mouse gamer leve e focado em alta performance",
     "price": 649.90,
+    "oldPrice": 749.90,
+    "promotion": true,
     "image": "/images/atk_zero_extreme.png",
     "specifications": {
       "dimensions": "120.1 mm (C) x 63.2 mm (L) x 38.1 mm (A)",
@@ -119,6 +126,7 @@
     "category": "Mouse",
     "description": "Mouse ultraleve desenvolvido para movimentos rápidos e precisos",
     "price": 829.00,
+    "promotion": false,
     "image": "/images/x2_crazylight.png",
     "specifications": {
       "dimensions": "115.6 mm (C) x 61 mm (L) x 36.6 mm (A)",
@@ -142,6 +150,7 @@
     "category": "Mouse",
     "description": "Mouse sem fio de alto desempenho com polling rate de até 8K",
     "price": 999.00,
+    "promotion": false,
     "image": "/images/maya_x.png",
     "specifications": {
       "dimensions": "124 mm (C) x 64 mm (L) x 40 mm (A)",
@@ -165,6 +174,7 @@
     "category": "Teclado",
     "description": "Teclado magnético compacto desenvolvido para alta performance",
     "price": 1299.90,
+    "promotion": false,
     "image": "/images/atk_edge_60_he.png",
     "specifications": {
       "type": "Magnético (Hall Effect)",
@@ -184,6 +194,8 @@
     "category": "Teclado",
     "description": "Teclado magnético full size desenvolvido para precisão e desempenho",
     "price": 1150,
+    "oldPrice": 1250.00,
+    "promotion": true,
     "image": "/images/wooting_two_he.png",
     "specifications": {
       "type": "Magnético (Hall Effect)",
@@ -203,6 +215,7 @@
     "category": "Teclado",
     "description": "Teclado magnético compacto com construção em liga de alumínio",
     "price": 1200,
+    "promotion": false,
     "image": "/images/gravastar_mercury_v60.png",
     "specifications": {
       "type": "Magnético (Hall Effect)",
@@ -214,6 +227,59 @@
       "connection": "USB-C com fio",
       "antiGhosting": "100% anti-ghosting / NKRO",
       "cable": "Removível - USB-C"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Polar 65 Calabera by Nacho Customz",
+    "category": "Teclado",
+    "description": "Teclado gamer magnético 65% com switches Hall Effect e Rapid Trigger",
+    "price": 999.90,
+    "oldPrice": 1100.00,
+    "promotion": true,
+    "image": "/images/polar_65_calabera.png",
+    "specifications": {
+      "dimensions": "315 mm (L) x 109 mm (P) x 40 mm (A)",
+      "layout": "65% - ANSI",
+      "keys": "68 teclas",
+      "weight": "Aprox. 1.020 g",
+      "switches": "Fuji Dual-Rail Magnetic - Linear 36 g",
+      "switchType": "Magnético - Hall Effect",
+      "actuation": "Ajustável de 0,1 mm a 3,8 mm",
+      "rapidTrigger": "Sim",
+      "pollingRate": "1.000 Hz",
+      "connection": "USB com cabo removível de 1,8 m",
+      "keycaps": "PBT Dye-Sub 1,5 mm - Perfil AOP",
+      "case": "Alumínio CNC",
+      "hotSwap": "Sim",
+      "rgb": "RGB com 16 modos"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Everglide SU75 Pro",
+    "category": "Teclado",
+    "description": "Teclado gamer magnético 75% em alumínio com Rapid Trigger e polling rate de 8K",
+    "price": 1699.90,
+    "promotion": false,
+    "image": "/images/everglide_su75_pro.png",
+    "specifications": {
+      "layout": "75% - ANSI US",
+      "keys": "81 teclas",
+      "weight": "2.000 g ±50 g",
+      "switches": "Everglide Wukong Hall Effect",
+      "switchType": "Magnético - Hall Effect",
+      "actuation": "Ajustável individualmente por tecla",
+      "rapidTrigger": "Sim - precisão configurável de até 0,001 mm",
+      "pollingRate": "8.000 Hz",
+      "scanRate": "256.000 Hz",
+      "latency": "0,1 ms",
+      "connection": "USB-C com fio",
+      "keycaps": "PC translúcido - Perfil Cherry",
+      "case": "Alumínio 6063 CNC anodizado",
+      "plate": "Fibra de carbono",
+      "hotSwap": "Sim",
+      "rgb": "RGB duplo com 170 LEDs"
     }
   }
 ]
