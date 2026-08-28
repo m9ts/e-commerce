@@ -7,6 +7,8 @@
     "price": 799.90,
     "oldPrice": 899.90,
     "promotion": true,
+    "rating": 5,
+    "reviews": 86,
     "image": "/images/v4_pro.png",
     "specifications": {
       "dimensions": "128 mm (C) x 68 mm (L) x 44 mm (A)",
@@ -30,6 +32,8 @@
     "description": "Mouse gamer sem fio de alta performance",
     "price": 699.00,
     "promotion": false,
+    "rating": 3,
+    "reviews": 16,
     "image": "/images/ying_x.png",
     "specifications": {
       "dimensions": "119 mm (C) x 60 mm (L) x 37 mm (A)",
@@ -53,6 +57,8 @@
     "description": "Mouse gamer desenvolvido para alto desempenho competitivo",
     "price": 899.00,
     "promotion": false,
+    "rating": 5,
+    "reviews": 28,
     "image": "/images/zywoo_gen2.png",
     "specifications": {
       "dimensions": "119.4 mm (C) x 67.5 mm (L) x 43.5 mm (A)",
@@ -76,6 +82,8 @@
     "description": "Mouse sem fio voltado para precisão e desempenho",
     "price": 749.00,
     "promotion": false,
+    "rating": 4,
+    "reviews": 10,
     "image": "/images/a7x_ultra.png",
     "specifications": {
       "dimensions": "125.7 mm (C) x 63.2 mm (L) x 39.8 mm (A)",
@@ -100,6 +108,8 @@
     "price": 649.90,
     "oldPrice": 749.90,
     "promotion": true,
+    "rating": 4,
+    "reviews": 8,
     "image": "/images/atk_zero_extreme.png",
     "specifications": {
       "dimensions": "120.1 mm (C) x 63.2 mm (L) x 38.1 mm (A)",
@@ -123,6 +133,8 @@
     "description": "Mouse ultraleve desenvolvido para movimentos rápidos e precisos",
     "price": 829.00,
     "promotion": false,
+    "rating": 5,
+    "reviews": 7,
     "image": "/images/x2_crazylight.png",
     "specifications": {
       "dimensions": "115.6 mm (C) x 61 mm (L) x 36.6 mm (A)",
@@ -146,6 +158,8 @@
     "description": "Mouse sem fio de alto desempenho com polling rate de até 8K",
     "price": 999.00,
     "promotion": false,
+    "rating": 4,
+    "reviews": 14,
     "image": "/images/maya_x.png",
     "specifications": {
       "dimensions": "124 mm (C) x 64 mm (L) x 40 mm (A)",
@@ -169,6 +183,8 @@
     "description": "Teclado magnético compacto desenvolvido para alta performance",
     "price": 1299.90,
     "promotion": false,
+    "rating": 5,
+    "reviews": 9,
     "image": "/images/atk_edge_60_he.png",
     "specifications": {
       "layout": "60% com 61 teclas - ANSI",
@@ -186,6 +202,8 @@
     "price": 1150,
     "oldPrice": 1250.00,
     "promotion": true,
+    "rating": 5,
+    "reviews": 67,
     "image": "/images/wooting_two_he.png",
     "specifications": {
       "layout": "Full Size com teclado numérico - ANSI",
@@ -202,6 +220,8 @@
     "description": "Teclado magnético compacto com construção em liga de alumínio",
     "price": 1200,
     "promotion": false,
+    "rating": 4,
+    "reviews": 11,
     "image": "/images/gravastar_mercury_v60.png",
     "specifications": {
       "layout": "60% com 61 teclas - ANSI",
@@ -219,6 +239,8 @@
     "price": 999.90,
     "oldPrice": 1100.00,
     "promotion": true,
+    "rating": 5,
+    "reviews": 7,
     "image": "/images/polar_65_calabera.png",
     "specifications": {
       "layout": "65% - ANSI",
@@ -235,6 +257,8 @@
     "description": "Teclado gamer magnético 75% em alumínio com Rapid Trigger e polling rate de 8K",
     "price": 1699.90,
     "promotion": false,
+    "rating": 5,
+    "reviews": 4,
     "image": "/images/everglide_su75_pro.png",
     "specifications": {
       "layout": "75% - ANSI US",

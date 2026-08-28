@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Stars from './Stars';
 
 function ProductCard({
   product,
@@ -39,6 +40,11 @@ function ProductCard({
       <div className="product-info">
         <h3>{product.name}</h3>
 
+        <Stars
+          rating={product.rating}
+          reviews={product.reviews}
+        />
+
         <div className="product-price-container">
           {product.promotion && (
             <span className="old-price">
@@ -68,7 +74,7 @@ function ProductCard({
           className={`cart-button ${added ? 'added' : ''}`}
           onClick={handleAddedToCart}
         >
-          {added ? 'Adicionado' : 'Adicionar ao carrinho' }
+          {added ? 'Adicionado' : 'Adicionar ao carrinho'}
         </button>
       </div>
     </article>
