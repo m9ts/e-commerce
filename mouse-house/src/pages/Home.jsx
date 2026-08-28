@@ -15,6 +15,7 @@ function Home() {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('Todos');
+  const [onlyPromotions, setOnlyPromotions] = useState(false);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -40,7 +41,10 @@ function Home() {
       selectedCategory === 'Todos' ||
       product.category === selectedCategory;
 
-    return matchesSearch && matchesCategory;
+    const matchesPromotion =
+      !onlyPromotions || product.promotion === true;
+
+    return matchesSearch && matchesCategory && matchesPromotion;
   });
 
   const sortedProducts = [...filteredProducts];
@@ -158,6 +162,13 @@ function Home() {
                 onClick={() => setSelectedCategory('Teclado')}
               >
                 Teclados
+              </button>
+
+              <button
+                className={`promotion-filter ${onlyPromotions ? 'active' : ''}`}
+                onClick={() => setOnlyPromotions(!onlyPromotions)}
+              >
+                Ofertas
               </button>
             </div>
 

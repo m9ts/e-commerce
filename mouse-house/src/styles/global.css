@@ -211,6 +211,8 @@ img {
 }
 
 .product-image-container {
+  position: relative;
+
   height: 280px;
 
   padding: 32px;
@@ -233,6 +235,23 @@ img {
   object-fit: contain;
 }
 
+.promotion-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 1;
+
+  padding: 6px 10px;
+
+  border-radius: 999px;
+
+  background-color: var(--color-primary);
+  color: #ffffff;
+
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
 .product-info {
   padding: 24px;
 }
@@ -243,10 +262,26 @@ img {
   font-size: 1.1rem;
 }
 
+.product-price-container {
+  min-height: 52px;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.old-price {
+  margin-bottom: 2px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 0.9rem;
+  text-decoration: line-through;
+}
+
 .product-price {
   display: block;
-
-  margin-bottom: 20px;
 
   font-size: 1.25rem;
 }

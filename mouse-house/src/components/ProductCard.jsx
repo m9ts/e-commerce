@@ -21,6 +21,12 @@ function ProductCard({
   return (
     <article className="product-card">
       <div className="product-image-container">
+        {product.promotion && (
+          <span className="promotion-badge">
+            Promoção
+          </span>
+        )}
+
         <img
           src={product.image}
           alt={product.name}
@@ -33,12 +39,23 @@ function ProductCard({
       <div className="product-info">
         <h3>{product.name}</h3>
 
-        <strong className="product-price">
-          {product.price.toLocaleString('pt-BR', {
-            style: 'currency',
-            currency: 'BRL',
-          })}
-        </strong>
+        <div className="product-price-container">
+          {product.promotion && (
+            <span className="old-price">
+              {product.oldPrice.toLocaleString('pt-BR', {
+                style: 'currency',
+                currency: 'BRL',
+              })}
+            </span>
+          )}
+
+          <strong className="product-price">
+            {product.price.toLocaleString('pt-BR', {
+              style: 'currency',
+              currency: 'BRL',
+            })}
+          </strong>
+        </div>
 
         <button
           className="details-button"
@@ -51,7 +68,7 @@ function ProductCard({
           className={`cart-button ${added ? 'added' : ''}`}
           onClick={handleAddedToCart}
         >
-          {added ? 'Adicionado' : 'Adicionar ao carrinho'}
+          {added ? 'Adicionado' : 'Adicionar ao carrinho' }
         </button>
       </div>
     </article>
