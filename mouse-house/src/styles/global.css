@@ -1178,3 +1178,16 @@ img {
   color: var(--color-text-secondary);
   font-size: 0.9rem;
 }
+
+.quantity-controls button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.quantity-limit {
+  display: block;
+  margin-top: 6px;
+
+  color: red;
+  font-size: 0.75rem;
+}

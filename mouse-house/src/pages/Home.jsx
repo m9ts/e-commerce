@@ -63,6 +63,10 @@ function Home() {
     );
 
     if (productInCart) {
+      if (productInCart.quantity >= 10) {
+        return;
+      }
+
       setCart(
         cart.map((item) =>
           item.id === product.id
@@ -89,7 +93,7 @@ function Home() {
   const increaseQuantity = (productId) => {
     setCart(
       cart.map((item) =>
-        item.id === productId
+        item.id === productId && item.quantity < 10
           ? { ...item, quantity: item.quantity + 1 }
           : item
       )

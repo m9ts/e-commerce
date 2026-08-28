@@ -55,10 +55,17 @@ function Cart({
 
                       <button
                         onClick={() => onIncrease(item.id)}
+                        disabled={item.quantity >= 10}
                       >
                         +
                       </button>
                     </div>
+
+                    {item.quantity >= 10 && (
+                      <small className="quantity-limit">
+                        Limite de 10 unidades
+                      </small>
+                    )}
 
                     <button
                       className="remove-button"
