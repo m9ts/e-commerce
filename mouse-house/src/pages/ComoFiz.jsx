@@ -20,9 +20,8 @@ function ComoFiz() {
             controls
             preload="metadata"
           >
-            {/* vídeo otimizado */}
             <source
-              src="https://pub-20a37aaaf276468b8725b960dd048748.r2.dev/mh-como-fiz.mp4"
+              src="https://pub-20a37aaaf276468b8725b960dd048748.r2.dev/como-fiz-mouse-house.mp4"
               type="video/mp4"
             />
 
@@ -39,21 +38,28 @@ function ComoFiz() {
                 <strong>Estrutura do projeto:</strong> organização em
                 componentes, páginas, estilos e arquivos públicos,
                 incluindo <code>Home.jsx</code>, <code>ComoFiz.jsx</code>,
-                <code>components/</code> e <code>products.json</code>.
+                <code> components/</code> e <code>products.json</code>.
               </li>
 
               <li>
                 <strong>Catálogo separado do front-end:</strong> os produtos
                 ficam em <code>products.json</code> e são carregados com
-                <code>fetch()</code>, evitando deixar os produtos hardcoded
+                <code> fetch()</code>, evitando deixar os produtos hardcoded
                 nos componentes.
               </li>
 
               <li>
-                <strong>Headless commerce e arquitetura em nuvem: </strong>
+                <strong>Headless commerce e arquitetura em nuvem:</strong>
                 como a separação entre dados e interface representa um
                 headless commerce em miniatura e onde CDN, cache e origem
                 entrariam em uma arquitetura AWS.
+              </li>
+
+              <li>
+                <strong>BFF (Backend for Frontend):</strong> como a arquitetura
+                poderia evoluir caso a Mouse House ganhasse também um aplicativo
+                mobile, utilizando um BFF para atender às necessidades
+                específicas de cada front-end.
               </li>
 
               <li>
@@ -120,6 +126,15 @@ function ComoFiz() {
                 no Cloudflare Pages e o vídeo desta página foi armazenado
                 no Cloudflare R2, sendo reproduzido pelo elemento
                 <code> &lt;video&gt;</code> do próprio site.
+              </li>
+
+              <li>
+                <strong>Possível evolução com BFF:</strong> caso a loja também
+                tivesse um aplicativo mobile, uma camada de BFF poderia ser
+                adicionada entre os front-ends e os serviços de backend.
+                Dessa forma, Web e Mobile poderiam ter interfaces de backend
+                adaptadas às necessidades de cada cliente, sem duplicar os
+                serviços responsáveis pelas regras de negócio.
               </li>
             </ul>
           </div>
