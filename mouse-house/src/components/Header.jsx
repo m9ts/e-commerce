@@ -4,7 +4,7 @@ function Header({ cartCount, onOpenCart }) {
       <div className="container header-content">
         <a href="/" className="logo">
           <img
-            src="/images/logo-mouse-house.jpeg"
+            src="/images/logo-mouse-house.png"
             alt="Logo Mouse House"
           />
 

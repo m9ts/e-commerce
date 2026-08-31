@@ -1330,3 +1330,79 @@ img {
     gap: 12px;
   }
 }
+
+.como-fiz-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  margin: 48px 0;
+}
+
+.como-fiz-section {
+  padding: 28px;
+
+  background-color: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+}
+
+.como-fiz-section h2 {
+  margin: 0 0 20px;
+
+  font-size: 1.5rem;
+}
+
+.como-fiz-section ol,
+.como-fiz-section ul {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.como-fiz-section li {
+  margin-bottom: 16px;
+
+  color: var(--color-text-secondary);
+
+  line-height: 1.7;
+}
+
+.como-fiz-section li:last-child {
+  margin-bottom: 0;
+}
+
+.como-fiz-section strong {
+  color: var(--color-text);
+}
+
+.como-fiz-section code {
+  padding: 2px 6px;
+
+  border-radius: 6px;
+
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.back-home-button {
+  display: inline-block;
+
+  padding: 12px 18px;
+
+  border-radius: 8px;
+
+  background-color: var(--color-primary);
+  color: #ffffff;
+
+  font-weight: 600;
+
+  transition: background-color 0.2s ease;
+}
+
+.back-home-button:hover {
+  background-color: var(--color-primary-hover);
+}
