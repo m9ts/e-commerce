@@ -20,6 +20,7 @@ function ComoFiz() {
             controls
             preload="metadata"
           >
+            {/* vídeo otimizado */}
             <source
               src="https://pub-20a37aaaf276468b8725b960dd048748.r2.dev/mh-como-fiz.mp4"
               type="video/mp4"
